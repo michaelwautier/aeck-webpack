@@ -1,0 +1,31 @@
+.list-wrapper {
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+  overflow-x: auto;
+  height: 50px;
+  align-items: flex-end;
+}
+
+.list-wrapper::-webkit-scrollbar {
+  width: 0;
+}
+
+.list-item {
+  white-space: nowrap;
+  /* text-align: center; */
+  margin: 0 15px;
+}
+
+.list-item a {
+  font-size: 18px;
+  transition: all ease .3s;
+}
+
+.list-item a span {
+  color: gray;
+}
+
+.list-item a:focus {
+  font-size: 24px;
+}

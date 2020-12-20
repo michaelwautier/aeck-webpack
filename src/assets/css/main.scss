@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
+@import './components/header.scss';
+@import './components/list.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Scope One', serif;
+  font-weight: bold;
+}
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+a:focus {
+  color: black;
+}

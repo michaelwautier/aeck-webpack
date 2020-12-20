@@ -1,0 +1,26 @@
+header {
+  padding: 20px 0;
+}
+
+.title {
+  position: relative;
+}
+
+.title h1 {
+  position: absolute;
+  font-size: 13px;
+  transform: rotate(-90deg);
+  color: gray;
+  top: 40px;
+  left: -40px;
+}
+
+.title h2 {
+  font-size: 13px;
+  margin-left: 20px;
+}
+
+header a {
+  font-size: 13px;
+  margin-right: 10px;
+}
