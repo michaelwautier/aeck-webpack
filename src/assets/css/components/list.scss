@@ -1,3 +1,7 @@
+#collection-nav {
+  transition: opacity .5s ease;
+}
+
 .list-wrapper {
   padding-left: 0;
   display: flex;
@@ -25,6 +29,7 @@
   color: gray;
 }
 
-.list-item a:focus {
+.list-item.active a {
+  color: black;
   font-size: 24px;
 }

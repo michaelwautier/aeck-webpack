@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
 @import './components/header.scss';
 @import './components/list.scss';
+@import './components/bio.scss';
+@import './components/work.scss';
 
 body {
   margin: 0;
@@ -18,13 +20,25 @@ body {
   margin: 0 auto;
 }
 
+.d-none {
+  display: none;
+}
+
 .flex {
   display: flex;
+}
+
+.justify-content-between {
   justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
 }
 
 main {
   flex-grow: 1;
+  transition: opacity .5s ease;
 }
 
 a {
@@ -32,6 +46,6 @@ a {
   color: gray;
 }
 
-a:focus {
+a.active {
   color: black;
 }

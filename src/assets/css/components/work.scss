@@ -1,0 +1,26 @@
+.collection-cover {
+  height: 480px;
+  width: 350px;
+  object-fit: cover;
+  transition: all .5s ease;
+}
+
+.collection-cover:hover {
+  cursor: pointer;
+  height: 480px;
+  width: 450px;
+  object-fit: cover;
+}
+
+.collection-cover.active {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.collection-text {
+  transition: all 0.5s ease;
+}
+
+.no-width {
+  width: 0;
+}

@@ -1,0 +1,36 @@
+.flex-item {
+  flex: 0 0 50%;
+}
+
+.bio-box {
+  display: flex;
+  img {
+    width: 300px;
+    border: 1px solid black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .picture-bio p {
+    text-align: right;
+    font-weight: 400;
+  }
+  .text-bio {
+    padding: 0 20px;
+  }
+  .text-bio p {
+    margin-top: 0;
+    font-weight: 400;
+  }
+}
+
+.contact-box {
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  .socials {
+    flex-direction: column;
+  }
+}
+
+.fade {
+  opacity: 0;
+}
