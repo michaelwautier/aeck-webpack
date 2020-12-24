@@ -5,6 +5,7 @@
 .list-wrapper {
   padding-left: 0;
   display: flex;
+  justify-content: space-between;
   list-style: none;
   overflow-x: auto;
   height: 50px;
@@ -21,15 +22,24 @@
 }
 
 .list-item a {
-  font-size: 18px;
+  font-size: 13px;
   transition: all ease .3s;
 }
 
-.list-item a span {
+.white-bg .list-item a span {
   color: gray;
 }
 
-.list-item.active a {
+.white-bg .list-item.active a {
   color: black;
-  font-size: 24px;
+  font-size: 20px;
+}
+
+.purple-bg .list-item a span {
+  color: white;
+}
+
+.purple-bg .list-item.active a {
+  color: #FAFF00;
+  font-size: 20px;
 }

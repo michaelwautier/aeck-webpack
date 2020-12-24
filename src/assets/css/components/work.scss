@@ -1,26 +1,48 @@
-.collection-cover {
-  height: 480px;
+.work-cover {
+  height: 470px;
   width: 350px;
   object-fit: cover;
-  transition: all .5s ease;
+  margin: 0 auto;
+}
+.collection-cover {
+  height: 480px;
+  width: 300px;
+  object-fit: cover;
+  transition: all .8s ease;
 }
 
 .collection-cover:hover {
   cursor: pointer;
-  height: 480px;
   width: 450px;
-  object-fit: cover;
 }
 
 .collection-cover.active {
-  width: 40%;
-  margin: 0 auto;
+  width: 39%;
+  transform: translateX(-79%);
 }
 
 .collection-text {
-  transition: all 0.5s ease;
+  flex-grow: 1;
+  transition: all .6s ease;
+}
+
+.collection-text p {
+  text-align: justify;
+  width: 500px;
 }
 
 .no-width {
   width: 0;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.move-to-left {
+  transform: translateX(-33%);
 }

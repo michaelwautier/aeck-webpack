@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
 @import './components/header.scss';
 @import './components/list.scss';
+@import './components/carousel.scss';
 @import './components/bio.scss';
 @import './components/work.scss';
 
@@ -14,6 +15,23 @@ body {
   font-family: 'Scope One', serif;
   font-weight: bold;
 }
+
+.bg-box {
+  background-size: 200% 200%;
+  transition: background-position 1s ease-in-out;
+}
+
+.white-bg {
+  background-image: linear-gradient(to top left, #7919C5 50%, white 0);
+  background-position: top left;
+}
+
+.purple-bg {
+  background-image: linear-gradient(to top left, #7919C5 50%, white 0);
+  background-position: bottom right;
+}
+
+/* DISPLAY */
 
 .wrapper {
   width: 95%;
@@ -41,11 +59,24 @@ main {
   transition: opacity .5s ease;
 }
 
+/* LINKS */
+
 a {
   text-decoration: none;
+}
+
+.white-bg a {
   color: gray;
 }
 
-a.active {
+.white-bg a.active {
   color: black;
+}
+
+.purple-bg a {
+  color: white;
+}
+
+.purple-bg a.active {
+  color: #FAFF00;
 }

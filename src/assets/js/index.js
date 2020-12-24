@@ -1,6 +1,10 @@
 import "../css/main.scss";
 import collections from "../../app/collections"
 
+import allPics from "./imageImport"
+
+
+
 const pageContent = document.querySelector("main")
 
 const workButton = document.getElementById("work-button")
@@ -8,17 +12,23 @@ const contactButton = document.getElementById("contact-button")
 const collectionNav = document.getElementById("collection-nav")
 
 workButton.addEventListener("click", () => {
+  document.body.classList.remove("purple-bg")
+  document.body.classList.add("white-bg")
+  document.body.style.color = "black"
   workButton.classList.add('active')
   contactButton.classList.remove('active')
   pageContent.classList.add('fade')
   setTimeout(() => {
-    pageContent.innerHTML = `test`
+    pageContent.innerHTML = "<img src='./img/work.png' class='work-cover' />"
     pageContent.classList.remove('fade')
     collectionNav.classList.remove('fade')
   }, 500)
 })
 
 contactButton.addEventListener("click", () => {
+  document.body.classList.remove("purple-bg")
+  document.body.classList.add("white-bg")
+  document.body.style.color = "black"
   workButton.classList.remove('active')
   contactButton.classList.add('active')
   collectionNav.classList.add('fade')
@@ -74,29 +84,36 @@ collectionLinks[0].classList.add('active')
 
 collectionLinks.forEach(el => {
   el.addEventListener('click', () => {
+    pageContent.classList.add('fade')
     collectionsList.querySelector('.active').classList.remove('active')
     el.classList.add('active')
     const collectionId = el.firstChild.dataset.collection
     const selectedCollection = collections[collectionId - 1]
-    pageContent.innerHTML = `
-    <div class="collection-text">${selectedCollection.text}</div>
-    <img class="collection-cover" src="./img/${selectedCollection.image}">
-    `
-    const collectionText = document.querySelector('.collection-text')
-    const collectionCover = document.querySelector('.collection-cover')
-    collectionCover.addEventListener('click', (e) => {
-      collectionText.classList.add("fade")
-      setTimeout(() => {
-        collectionText.remove()}, 500)      
-      collectionCover.classList.add("active")
-    })
-    if (selectedCollection.category === "Graphic Design") {
-      document.body.style.backgroundColor = "#7919C5"
-      document.body.style.color = "white"
-    } else {
-      document.body.style.backgroundColor = "white"
-      document.body.style.color = "black"
-    }
+    setTimeout(() => {
+      pageContent.innerHTML = `
+      <div class="flex justify-content-between align-end full-width">
+        <div class="collection-text">${selectedCollection.text}</div>
+        <img class="collection-cover" src="./img/${selectedCollection.image}">
+      </div>
+      `
+      const collectionText = document.querySelector('.collection-text')
+      const collectionCover = document.querySelector('.collection-cover')
+      collectionCover.addEventListener('click', (e) => {
+        collectionText.classList.add("fade")
+        collectionText.classList.add("move-to-left")     
+        collectionCover.classList.add("active")
+      })
+      if (selectedCollection.category === "Graphic Design") {
+        document.body.classList.remove("white-bg")
+        document.body.classList.add("purple-bg")
+        document.body.style.color = "white"
+      } else {
+        document.body.classList.remove("purple-bg")
+        document.body.classList.add("white-bg")
+        document.body.style.color = "black"
+      }
+      pageContent.classList.remove('fade')
+    }, 500) 
   })
 })
 
