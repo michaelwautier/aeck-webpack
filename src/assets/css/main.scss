@@ -54,6 +54,18 @@ body {
   align-items: center;
 }
 
+.no-width {
+  width: 0;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.fade {
+  opacity: 0;
+}
+
 main {
   flex-grow: 1;
   transition: opacity .5s ease;
