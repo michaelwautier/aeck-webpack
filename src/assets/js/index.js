@@ -2,12 +2,16 @@ import "../css/main.scss";
 import collections from "../../app/collections"
 import "./imageImport"
 
+import preloading from './preload'
+
 import contactPageContent from './content/contactPageContent'
 import collectionContent from './content/collectionContent'
 import listItemContent from './content/listItemContent'
 
 import switchToWhiteBg from './display/switchToWhiteBg'
 import switchToPurpleBg from './display/switchToPurpleBg'
+
+preloading()
 
 const pageContent = document.querySelector("main")
 const workButton = document.getElementById("work-button")
@@ -71,4 +75,3 @@ collectionLinks.forEach(el => {
     }, 500) 
   })
 })
-

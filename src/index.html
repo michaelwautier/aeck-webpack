@@ -6,27 +6,39 @@
   <title>Julien Lebreton</title>
 </head>
 <body class="bg-box white-bg">
-  <header>
-    <div class="wrapper flex justify-content-between">
-      <div class="title">
-        <h1>Julien Lebreton</h1>
-        <h2>Photographer / Graphic Designer</h2>
-      </div>
-      <div>
-        <a id="work-button" href="#" class="nav-link">
-          Work*
-        </a>
-        <a id="contact-button" href="#" class="nav-link">
-          Bio / Contact
-        </a>
+  <div class="preload">
+    <div class="scene">
+      <!-- <div class="yellow-rectangle"></div> -->
+      <div class="cube">
+        <div class="cube__face cube__face--front"></div>
+        <div class="cube__face cube__face--right"></div>
       </div>
     </div>
-  </header>
-  <main id="root" class="wrapper flex align-center">
-  </main>
-  <nav id="collection-nav">
-    <ul id="collections-list" class="list-wrapper">
-    </ul>
-  </nav>
+  </div>
+  <div id="content" class="content fade">
+    <header>
+      <div class="wrapper flex justify-content-between">
+        <div class="title">
+          <h1>Julien Lebreton</h1>
+          <h2>Photographer / Graphic Designer</h2>
+        </div>
+        <div>
+          <a id="work-button" href="#" class="nav-link active">
+            Work*
+          </a>
+          <a id="contact-button" href="#" class="nav-link">
+            Bio / Contact
+          </a>
+        </div>
+      </div>
+    </header>
+    <main id="root" class="wrapper flex align-center">
+      <img src="assets/img/work.png" class='work-cover' />
+    </main>
+    <nav id="collection-nav">
+      <ul id="collections-list" class="list-wrapper">
+      </ul>
+    </nav>
+  </div>
 </body>
 </html>

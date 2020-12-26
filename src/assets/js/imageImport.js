@@ -10,5 +10,7 @@ import "../img/slash0.png"
 import "../img/quotidien/7.jpg"
 import "../img/test-ratio1.jpg"
 import "../img/test-ratio2.jpg"
+import "../img/preloader.jpg"
+import "../img/preloader2.jpg"
 
 export default "allPics"

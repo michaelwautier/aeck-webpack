@@ -4,16 +4,20 @@
 @import './components/carousel.scss';
 @import './components/bio.scss';
 @import './components/work.scss';
+@import './components/preload.scss';
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Scope One', serif;
+  font-weight: bold;
+}
+
+.content {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: 'Scope One', serif;
-  font-weight: bold;
 }
 
 .bg-box {
