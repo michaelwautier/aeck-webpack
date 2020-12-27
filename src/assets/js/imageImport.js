@@ -1,15 +1,18 @@
 import "../img/work.png"
 import "../img/bio.jpeg"
+
+import "../img/banal/banal-01.webp"
+
+import "../img/naturemorte/nature-01.webp"
+
+import "../img/quotidien/quotidien-01.webp"
+
+import "../img/vavang/vavang-01.webp"
+
 import "../img/etoile0.jpeg"
-import "../img/table/lebreton-naturemorte-01.png"
-import "../img/banal/TL-Julien-01.jpg"
 import "../img/entre0.jpeg"
-import "../img/vavang0.jpeg"
 import "../img/human0.jpeg"
 import "../img/slash0.png"
-import "../img/quotidien/7.jpg"
-import "../img/test-ratio1.jpg"
-import "../img/test-ratio2.jpg"
 import "../img/preloader.jpg"
 import "../img/preloader2.jpg"
 

@@ -13,7 +13,7 @@ module.exports = {
         use: ["html-loader"]
       },
       {
-        test: /\.(svg|png|jpeg|jpg|gif)$/,
+        test: /\.(svg|png|jpeg|jpg|gif|webp)$/,
         use: {
           loader: "file-loader",
           options: {
