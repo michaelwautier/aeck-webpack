@@ -63,15 +63,33 @@ collectionLinks.forEach(el => {
     const selectedCollection = collections[collectionId - 1]
     setTimeout(() => {
       pageContent.innerHTML = collectionContent(selectedCollection)
-      const collectionText = document.querySelector('.collection-text')
-      const collectionCover = document.querySelector('.collection-cover')
-      collectionCover.addEventListener('click', (e) => {
-        collectionText.classList.add("fade")
-        collectionText.classList.add("move-to-left")     
-        collectionCover.classList.add("active")
-      })
+      centerCollectionCover(selectedCollection)
       selectedCollection.category === "Graphic Design" ? switchToPurpleBg() : switchToWhiteBg()
       pageContent.classList.remove('fade')
     }, 500) 
   })
 })
+
+const centerCollectionCover = (collection) => {
+  const collectionText = document.querySelector('.collection-text')
+  const collectionCover = document.querySelector('.collection-cover')
+  let counter = 1
+  collectionCover.addEventListener('click', (e) => {
+    if (collectionCover.classList.contains("active")) {
+      if (counter === 1 && collection.images.length !== 1) {
+        collectionCover.src = `img/${collection.images[1]}`
+        counter++
+      } else if (counter === collection.images.length || collection.images.length === 1) {
+        collectionCover.src = `img/${collection.images[0]}`
+        counter = 1
+      } else {
+        collectionCover.src = `img/${collection.images[counter]}`
+        counter++
+      }
+    } else {
+      collectionText.classList.add("fade")
+      collectionText.classList.add("move-to-left")     
+      collectionCover.classList.add("active")
+    }
+  })
+}

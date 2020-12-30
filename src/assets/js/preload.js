@@ -6,10 +6,13 @@ const preloading = () => {
   }, 2000)
   
   setTimeout(() => {
-    const content = document.getElementById('content')
     const preload = document.querySelector('.preload')
     preload.classList.add('preload-finish')
-    content.classList.remove('fade')
+    
+    setTimeout(() => {
+      const content = document.getElementById('content')
+      content.classList.remove('fade')
+    }, 500)
   }, 4000)
 }
 
