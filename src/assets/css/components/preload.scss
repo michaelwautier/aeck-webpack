@@ -9,20 +9,19 @@
   align-items: center;
   transition: all 1s ease;
 }
-
 .preload-finish {
   opacity: 0;
   pointer-events: none;
 }
 
 .scene {
-  width: 200px;
+  width: 201px;
   height: 470px;
   perspective: 400px;
 }
 
 .cube {
-  width: 200px;
+  width: 201px;
   height: 470px;
   position: relative;
   transform-style: preserve-3d;
@@ -35,18 +34,26 @@
 
 .cube__face {
   position: absolute;
-  width: 200px;
+  width: 201px;
   height: 470px;
   line-height: 200px;
 }
 
 .cube__face--front  { 
-  background: url('../img/preloader.jpg');
+  background: url('../img/preloader1.webp');
   background-size: cover;
 }
 .cube__face--right  { 
-  background: url('../img/preloader2.jpg');
+  background: radial-gradient(farthest-corner at top left, rgba(255,255,255,0.2) 20%, rgba(0,0,0,0) 90%) top right/100% 100%, url('../img/preloader2.webp');
   background-size: cover;
+  background-blend-mode: overlay;
+  animation: colorChange 5s infinite alternate;
+ }
+
+ @keyframes colorChange {
+  to {
+    background-position:top left;
+  }
  }
 
 .cube__face--front  { transform: rotateY(  0deg) translateZ(100px); }

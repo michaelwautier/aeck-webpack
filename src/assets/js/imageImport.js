@@ -62,7 +62,7 @@ import "../img/humains/humain8.webp"
 import "../img/humains/humain9.webp"
 import "../img/humains/humain10.webp"
 
-import "../img/preloader.jpg"
-import "../img/preloader2.jpg"
+import "../img/preloader1.webp"
+import "../img/preloader2.webp"
 
 export default "allPics"
