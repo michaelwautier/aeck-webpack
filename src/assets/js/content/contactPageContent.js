@@ -1,5 +1,5 @@
 const contactPageContent = `
-  <div class="flex-item">
+  <div class="flex-item-75">
     <div class="bio-box">
       <div class="picture-bio">
         <img src="./img/bio.jpeg" alt="julien" />
@@ -7,15 +7,25 @@ const contactPageContent = `
       </div>
       <div class="text-bio">
         <p>
-          L’ascenseur démarra tout seul après que la porte se soit fermée. Il descendait. Il n’arrêtait pas de descendre. Puis, il s’arrêta enfin. La porte s’ouvrit. Et David eut la stupeur de sa vie. Devant lui se déployait un complexe informatique. Une vingtaine de personnes se déplaçaient d’un poste à l’autre regardant au passage les écrans géants muraux situés au fond de la salle machinerie impressionnante.
+          Bonjour,
+          <br/>
+          Je suis Julien Lebreton, photographe et graphiste originaire de l'Île de la Réunion.
         </p>
         <p>
-          Internet n’est pas le seul réseau. Il existe un autre réseau plus performant. Je ne t’apprendrais rien en te disant qu’Internet a été crée par l’armée Américaine dans un but militaire. Internet n’était que le prototype. Un autre réseau a été créé pour les
+          Diplômé de l'ETPA à Toulouse et de l'ILOI à la Réunion, je concentre mon regard principalement sur les thèmes du quotidien et de l'intime.
+        </p>
+        <p>
+          Lauréat du concours Fisheye x Agfaphoto / Déc 2019
+          <br/>
+          Lauréat du concours Fisheye x Quai Branly / Août 2020
+        </p>
+        <p>
+          Exposition : Fisheye Gallery - Paris 'Lauréat Fisheye x Agfaphoto' / Déc 2019
         </p>
       </div>
     </div>
   </div>
-  <div class="flex-item">
+  <div class="flex-item-25">
     <div class="contact-box flex">
       <div class="contact-text">
         <p>julien@aeck.io</p>
