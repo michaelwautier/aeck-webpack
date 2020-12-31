@@ -89,7 +89,18 @@ export default [
     title: "Humains",
     category: "Photographie",
     text: "<p>Portrait et autres</p>",
-    images: ["human0.jpeg"]
+    images: [
+      "humain1.webp",
+      "humain2.webp",
+      "humain3.webp",
+      "humain4.webp",
+      "humain5.webp",
+      "humain6.webp",
+      "humain7.webp",
+      "humain8.webp",
+      "humain9.webp",
+      "humain10.webp",
+  ]
   }/*,
   {
     id: 7,

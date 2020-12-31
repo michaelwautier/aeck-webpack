@@ -18,10 +18,10 @@
 
 .collection-cover.active {
   width: 712px;
-  transform: translateX(-54%);
+  transform: translateX(-39%);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1300px) {
   .collection-cover.active {
     width: 39%;
     transform: translateX(-79%);

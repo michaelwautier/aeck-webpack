@@ -3419,6 +3419,13 @@ postcss@^8.1.4:
     nanoid "^3.1.20"
     source-map "^0.6.1"
 
+prefetch-image@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/prefetch-image/-/prefetch-image-1.1.0.tgz#48bbda21c268495cd7de0b2afb95b2e1fc3f7baf"
+  integrity sha1-SLvaIcJoSVzX3gsq+5Wy4fw/e68=
+  dependencies:
+    url-join "2.0.1"
+
 prepend-http@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
@@ -4515,6 +4522,11 @@ urix@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
+
+url-join@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/url-join/-/url-join-2.0.1.tgz#04b446fcd359a2fa42cc9b6962b219b91ddfe1a8"
+  integrity sha1-BLRG/NNZovpCzJtpYrIZuR3f4ag=
 
 url-loader@^4.1.1:
   version "4.1.1"

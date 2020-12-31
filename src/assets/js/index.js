@@ -1,6 +1,7 @@
 import "../css/main.scss";
 import collections from "../../app/collections"
 import "./imageImport"
+import prefetchImages from 'prefetch-image'
 
 import preloading from './preload'
 
@@ -61,6 +62,10 @@ collectionLinks.forEach(el => {
     el.classList.add('active')
     const collectionId = el.firstChild.dataset.collection
     const selectedCollection = collections[collectionId - 1]
+    const images = selectedCollection.images.map(image => {
+      return `img/${image}`
+    })
+    prefetchImages(images)
     setTimeout(() => {
       pageContent.innerHTML = collectionContent(selectedCollection)
       centerCollectionCover(selectedCollection)
@@ -88,10 +93,10 @@ const centerCollectionCover = (collection) => {
         collectionCover.classList.add("fade")
         setTimeout(() => {
           collectionCover.src = `img/${collection.images[counter - 1]}`
-          setTimeout(() => {
-            collectionCover.classList.remove("fade")
-          }, 200)
         }, 600)
+        setTimeout(() => {
+          collectionCover.classList.remove("fade")
+        }, 800)
         counter++
       }
     } else {

@@ -51,7 +51,17 @@ import "../img/vavang/vavang-10.webp"
 import "../img/vavang/vavang-11.webp"
 import "../img/vavang/vavang-12.webp"
 
-import "../img/human0.jpeg"
+import "../img/humains/humain1.webp"
+import "../img/humains/humain2.webp"
+import "../img/humains/humain3.webp"
+import "../img/humains/humain4.webp"
+import "../img/humains/humain5.webp"
+import "../img/humains/humain6.webp"
+import "../img/humains/humain7.webp"
+import "../img/humains/humain8.webp"
+import "../img/humains/humain9.webp"
+import "../img/humains/humain10.webp"
+
 import "../img/preloader.jpg"
 import "../img/preloader2.jpg"
 
