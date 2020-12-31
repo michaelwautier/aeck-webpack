@@ -71,6 +71,10 @@ body {
   opacity: 0;
 }
 
+.line-through {
+  text-decoration: line-through;
+}
+
 main {
   flex-grow: 1;
   transition: opacity .5s ease;

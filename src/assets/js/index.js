@@ -76,14 +76,22 @@ const centerCollectionCover = (collection) => {
   let counter = 1
   collectionCover.addEventListener('click', (e) => {
     if (collectionCover.classList.contains("active")) {
-      if (counter === 1 && collection.images.length !== 1) {
-        collectionCover.src = `img/${collection.images[1]}`
-        counter++
-      } else if (counter === collection.images.length || collection.images.length === 1) {
-        collectionCover.src = `img/${collection.images[0]}`
+      if (counter === collection.images.length || collection.images.length === 1) {
+        collectionText.classList.remove("fade")
+        collectionText.classList.remove("move-to-left")     
+        collectionCover.classList.remove("active")
+        setTimeout(() => {
+          collectionCover.src = `img/${collection.images[0]}`
+        }, 600)
         counter = 1
       } else {
-        collectionCover.src = `img/${collection.images[counter]}`
+        collectionCover.classList.add("fade")
+        setTimeout(() => {
+          collectionCover.src = `img/${collection.images[counter - 1]}`
+          setTimeout(() => {
+            collectionCover.classList.remove("fade")
+          }, 200)
+        }, 600)
         counter++
       }
     } else {

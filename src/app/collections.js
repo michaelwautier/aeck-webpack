@@ -1,9 +1,9 @@
 export default [
   {
     id: 1,
-    title: "Etoile Sud",
-    category: "Photography",
-    text: "<p>Les alentour de la ville de toulouse mis en image dans le cadre d’un workshop avec Olivier Culmann.</p>",
+    title: "Occitanie",
+    category: "Photographie",
+    text: "<p>Workshop encadré par Olivier Culmann.</p>",
     images: [
       "quotidien-01.webp",
       "quotidien-02.webp",
@@ -16,9 +16,9 @@ export default [
   },
   {
     id: 2,
-    title: "Table à manger",
-    category: "Photography",
-    text: "Collection nature morte",
+    title: "Rassasié",
+    category: "Photographie",
+    text: "<p>Nature morte</p>",
     images: [
       "nature-01.webp",
       "nature-02.webp",
@@ -28,30 +28,46 @@ export default [
   {
     id: 3,
     title: "Banal Exotisme",
-    category: "Photography",
-    text: "<p>Le Quotidien est commun a tout les Hommes, il nous entour et définit nos mode de vie. C’est un cycle qui n’attend que l’exception pour s’arrêter.</p><p>J’ai voulu mettre en lumière des objets qui sont les outils qui forment nos réalité sans qu’on n’y prête attention.</p><p>Notre quotidiens contiennent des images qui fragmenté n’ont pas l’air cohérente.</p>",
+    category: "Photographie",
+    text: "<p>Le Quotidien est commun a tout les Hommes, il nous entoure et définit nos modes de vie. C’est un cycle qui n’attend que l’exception pour s’arrêter.</p><p>J’ai voulu mettre en lumière des objets qui sont les outils qui forment nos réalités sans qu’on y prête attention.</p><p>Notre quotidien contient des images qui fragmentées n’ont pas l’air cohérentes.</p>",
     images: [
       "banal-01.webp",
       "banal-02.webp",
       "banal-03.webp",
       "banal-04.webp",
-      "banal-05.webp",
-      "banal-06.webp",
-      "banal-07.webp",
-      "banal-08.webp",
+      "banal-05.webp"
+      // "banal-06.webp",
+      // "banal-07.webp",
+      // "banal-08.webp",
     ]
   },
   {
     id: 4,
-    title: "Entre deux eaux",
-    category: "Photography",
+    title: "L'entre-deux-eaux",
+    category: "Photographie",
     text: "",
-    images: ["entre0.jpeg"]
+    images: [
+      "bretagne-1.webp",
+      "bretagne-2.webp",
+      "bretagne-3.webp",
+      "bretagne-4.webp",
+      "bretagne-5.webp",
+      "bretagne-6.webp",
+      "bretagne-7.webp",
+      "bretagne-8.webp",
+      "bretagne-9.webp",
+      "bretagne-10.webp",
+      "bretagne-11.webp",
+      "bretagne-12.webp",
+      "bretagne-13.webp",
+      "bretagne-14.webp",
+      "bretagne-15.webp",
+  ]
   },
   {
     id: 5,
     title: "Vavang'",
-    category: "Photography",
+    category: "Photographie",
     text: "<p>Mon île est remplie de richesse, chimère du rêve, muse de récit de voyage, utopie de tous et pourtant moi, j’ai l’impression d’y être enfermé, condamné à y faire le tour indéfiniment.</p><p>Tantôt sauvage et bienfaitrice, tantôt prison suffocante.</p><p>La Réunion, monde clos au milieu de l’océan indien, où le béton grignote la nature, et les traditions se confrontent à la course économique.</p><p>J’ai quitté mon caillou depuis peu et il me manque, il reste le point de nostalgie ultime que je fuis sans vraiment savoir pourquoi.</p>",
     images: [
       "vavang-01.webp",
@@ -70,11 +86,11 @@ export default [
   },
   {
     id: 6,
-    title: "Humans",
-    category: "Photography",
-    text: "Une salade d’images sans lien, hors le faites qu’elles contiennent tous des personnes.",
+    title: "Humains",
+    category: "Photographie",
+    text: "<p>Portrait et autres</p>",
     images: ["human0.jpeg"]
-  },
+  }/*,
   {
     id: 7,
     title: "Reveria",
@@ -95,5 +111,5 @@ export default [
     category: "Graphic Design",
     text: "",
     images: [""]
-  },
+  },*/
 ]

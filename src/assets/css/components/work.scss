@@ -8,7 +8,7 @@
   height: 480px;
   width: 300px;
   object-fit: cover;
-  transition: all .8s ease;
+  transition: all .6s ease;
 }
 
 .collection-cover:hover {
@@ -17,8 +17,15 @@
 }
 
 .collection-cover.active {
-  width: 39%;
-  transform: translateX(-79%);
+  width: 712px;
+  transform: translateX(-54%);
+}
+
+@media screen and (min-width: 1024px) {
+  .collection-cover.active {
+    width: 39%;
+    transform: translateX(-79%);
+  }
 }
 
 .collection-text {
@@ -29,6 +36,8 @@
 .collection-text p {
   text-align: justify;
   width: 500px;
+  color: gray;
+  font-size: .9em;
 }
 
 .align-end {
