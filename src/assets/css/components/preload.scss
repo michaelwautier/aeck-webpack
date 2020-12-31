@@ -44,17 +44,18 @@
   background-size: cover;
 }
 .cube__face--right  { 
-  background: radial-gradient(farthest-corner at top left, rgba(255,255,255,0.2) 20%, rgba(0,0,0,0) 90%) top right/100% 100%, url('../img/preloader2.webp');
+  background: url('../img/preloader2.webp');
+  // background: radial-gradient(farthest-corner at top left, rgba(255,255,255,0.2) 20%, rgba(0,0,0,0) 90%) top right/100% 100%, url('../img/preloader2.webp');
   background-size: cover;
-  background-blend-mode: overlay;
-  animation: colorChange 5s infinite alternate;
+  // background-blend-mode: overlay;
+  // animation: colorChange 5s infinite alternate;
  }
 
- @keyframes colorChange {
-  to {
-    background-position:top left;
-  }
- }
+//  @keyframes colorChange {
+//   to {
+//     background-position:top left;
+//   }
+//  }
 
 .cube__face--front  { transform: rotateY(  0deg) translateZ(100px); }
 .cube__face--right  { transform: rotateY( 90deg) translateZ(100px); }
