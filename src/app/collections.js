@@ -5,13 +5,13 @@ export default [
     category: "Photographie",
     text: "<p>Workshop encadré par Olivier Culmann.</p>",
     images: [
-      "quotidien-01.webp",
-      "quotidien-02.webp",
-      "quotidien-03.webp",
-      "quotidien-04.webp",
-      "quotidien-05.webp",
-      "quotidien-06.webp",
-      "quotidien-07.webp"
+      "quotidien-01.jpg",
+      "quotidien-02.jpg",
+      "quotidien-03.jpg",
+      "quotidien-04.jpg",
+      "quotidien-05.jpg",
+      "quotidien-06.jpg",
+      "quotidien-07.jpg"
     ]
   },
   {
@@ -20,9 +20,9 @@ export default [
     category: "Photographie",
     text: "<p>Nature morte</p>",
     images: [
-      "nature-01.webp",
-      "nature-02.webp",
-      "nature-03.webp"
+      "nature-01.jpg",
+      "nature-02.jpg",
+      "nature-03.jpg"
     ]
   },
   {
@@ -31,14 +31,14 @@ export default [
     category: "Photographie",
     text: "<p>Le Quotidien est commun a tout les Hommes, il nous entoure et définit nos modes de vie. C’est un cycle qui n’attend que l’exception pour s’arrêter.</p><p>J’ai voulu mettre en lumière des objets qui sont les outils qui forment nos réalités sans qu’on y prête attention.</p><p>Notre quotidien contient des images qui fragmentées n’ont pas l’air cohérentes.</p>",
     images: [
-      "banal-01.webp",
-      "banal-02.webp",
-      "banal-03.webp",
-      "banal-04.webp",
-      "banal-05.webp"
-      // "banal-06.webp",
-      // "banal-07.webp",
-      // "banal-08.webp",
+      "banal-01.jpg",
+      "banal-02.jpg",
+      "banal-03.jpg",
+      "banal-04.jpg",
+      "banal-05.jpg"
+      // "banal-06.jpg",
+      // "banal-07.jpg",
+      // "banal-08.jpg",
     ]
   },
   {
@@ -47,21 +47,21 @@ export default [
     category: "Photographie",
     text: "",
     images: [
-      "bretagne-1.webp",
-      "bretagne-2.webp",
-      "bretagne-3.webp",
-      "bretagne-4.webp",
-      "bretagne-5.webp",
-      "bretagne-6.webp",
-      "bretagne-7.webp",
-      "bretagne-8.webp",
-      "bretagne-9.webp",
-      "bretagne-10.webp",
-      "bretagne-11.webp",
-      "bretagne-12.webp",
-      "bretagne-13.webp",
-      "bretagne-14.webp",
-      "bretagne-15.webp",
+      "bretagne-01.jpg",
+      "bretagne-02.jpg",
+      "bretagne-03.jpg",
+      "bretagne-04.jpg",
+      "bretagne-05.jpg",
+      "bretagne-06.jpg",
+      "bretagne-07.jpg",
+      "bretagne-08.jpg",
+      "bretagne-09.jpg",
+      "bretagne-10.jpg",
+      "bretagne-11.jpg",
+      "bretagne-12.jpg",
+      "bretagne-13.jpg",
+      "bretagne-14.jpg",
+      "bretagne-15.jpg",
   ]
   },
   {
@@ -70,18 +70,18 @@ export default [
     category: "Photographie",
     text: "<p>Mon île est remplie de richesse, chimère du rêve, muse de récit de voyage, utopie de tous et pourtant moi, j’ai l’impression d’y être enfermé, condamné à y faire le tour indéfiniment.</p><p>Tantôt sauvage et bienfaitrice, tantôt prison suffocante.</p><p>La Réunion, monde clos au milieu de l’océan indien, où le béton grignote la nature, et les traditions se confrontent à la course économique.</p><p>J’ai quitté mon caillou depuis peu et il me manque, il reste le point de nostalgie ultime que je fuis sans vraiment savoir pourquoi.</p>",
     images: [
-      "vavang-01.webp",
-      "vavang-02.webp",
-      "vavang-03.webp",
-      "vavang-04.webp",
-      "vavang-05.webp",
-      "vavang-06.webp",
-      "vavang-07.webp",
-      "vavang-08.webp",
-      "vavang-09.webp",
-      "vavang-10.webp",
-      "vavang-11.webp",
-      "vavang-12.webp",
+      "vavang-01.jpg",
+      "vavang-02.jpg",
+      "vavang-03.jpg",
+      "vavang-04.jpg",
+      "vavang-05.jpg",
+      "vavang-06.jpg",
+      "vavang-07.jpg",
+      "vavang-08.jpg",
+      "vavang-09.jpg",
+      "vavang-10.jpg",
+      "vavang-11.jpg",
+      "vavang-12.jpg",
   ]
   },
   {
@@ -90,16 +90,16 @@ export default [
     category: "Photographie",
     text: "<p>Portrait et autres</p>",
     images: [
-      "humain1.webp",
-      "humain2.webp",
-      "humain3.webp",
-      "humain4.webp",
-      "humain5.webp",
-      "humain6.webp",
-      "humain7.webp",
-      "humain8.webp",
-      "humain9.webp",
-      "humain10.webp",
+      "humain1.jpg",
+      "humain2.jpg",
+      "humain3.jpg",
+      "humain4.jpg",
+      "humain5.jpg",
+      "humain6.jpg",
+      "humain7.jpg",
+      "humain8.jpg",
+      "humain9.jpg",
+      "humain10.jpg",
   ]
   }/*,
   {
