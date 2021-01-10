@@ -18,7 +18,7 @@ export default [
     id: 2,
     title: "Rassasié",
     category: "Photographie",
-    text: "<p>Nature morte</p>",
+    text: "",
     images: [
       "nature-01.jpg",
       "nature-02.jpg",
@@ -88,7 +88,7 @@ export default [
     id: 6,
     title: "Humains",
     category: "Photographie",
-    text: "<p>Portrait et autres</p>",
+    text: "",
     images: [
       "humain1.jpg",
       "humain2.jpg",

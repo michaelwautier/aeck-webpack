@@ -31,8 +31,7 @@ const contactPageContent = `
         <p>julien@aeck.io</p>
         <p>(+262)693 63 64 36</p>
         <div class="socials flex">
-          <a href="#">Instagram</a>
-          <a href="#">Facebook</a>
+          <a href="https://www.instagram.com/julien_lebreton/" target="_blank">Instagram</a>
         </div>
       </div>
     </div>
