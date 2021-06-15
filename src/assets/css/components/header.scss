@@ -1,3 +1,4 @@
+
 header {
   padding: 20px 0;
 }
@@ -10,7 +11,7 @@ header {
   position: absolute;
   font-size: 13px;
   transform: rotate(-90deg);
-  color: gray;
+  color: rgb(209, 209, 209);
   top: 40px;
   left: -40px;
 }
@@ -22,9 +23,34 @@ header {
 .title h2 {
   font-size: 13px;
   margin-left: 20px;
+  color: black;
 }
 
 header a {
   font-size: 13px;
   margin-right: 10px;
+}
+.menu1 {
+  display: none;
+}
+.menu2 {
+  display: flex;
+  justify-content: center;
+  a {
+    font-size: 13px;
+  }
+  margin-bottom: 10px;
+  #contact-button2 {
+    margin-left: 10px;
+  }
+  width: 100%;
+}
+@media screen and (min-width: $mobile) {
+  .menu1 {
+    display: block;
+    
+  }
+  .menu2 {
+    display: none;
+  }
 }

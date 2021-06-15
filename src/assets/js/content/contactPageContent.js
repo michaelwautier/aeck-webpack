@@ -2,8 +2,19 @@ const contactPageContent = `
   <div class="flex-item-75">
     <div class="bio-box">
       <div class="picture-bio">
-        <img src="./img/bio.jpeg" alt="julien" />
-        <p>Photography: Paul Baudon</p>
+        <img src="./img/bio.jpeg" alt="julien" id="portrait" />
+        <p id="credit">Photography: Paul Baudon</p>
+        <div class="flex-item-25">
+           <div class="contact-box flex">
+            <div class="contact-text">
+              <p>julien@aeck.io</p>
+               <p>(+262)693 63 64 36</p>
+               <div class="socials flex">
+               <a href="https://www.instagram.com/julien_lebreton/" target="_blank">Instagram</a>
+             </div>
+           </div>
+    </div>
+  </div>
       </div>
       <div class="text-bio">
         <p>
@@ -25,17 +36,7 @@ const contactPageContent = `
       </div>
     </div>
   </div>
-  <div class="flex-item-25">
-    <div class="contact-box flex">
-      <div class="contact-text">
-        <p>julien@aeck.io</p>
-        <p>(+262)693 63 64 36</p>
-        <div class="socials flex">
-          <a href="https://www.instagram.com/julien_lebreton/" target="_blank">Instagram</a>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 `
 
 export default contactPageContent

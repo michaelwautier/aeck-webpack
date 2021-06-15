@@ -4,6 +4,7 @@
   object-fit: cover;
   margin: 0 auto;
 }
+
 .collection-cover {
   height: 480px;
   width: 300px;
@@ -27,17 +28,30 @@
     transform: translateX(-79%);
   }
 }
-
+.photoandtext{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  position :relative;
+  .collection-text{
+    position : absolute;
+    top: 70px;
+    right: 170px;
+  }
+}
 .collection-text {
-  flex-grow: 1;
+  // flex-grow: 1;
   transition: all .6s ease;
+  background-color: black;
+  padding: 10px;
 }
 
 .collection-text p {
   text-align: justify;
-  width: 500px;
-  color: gray;
-  font-size: .9em;
+  width: 300px;
+  color: rgb(255, 255, 255);
+  font-size: .8em;
+ 
 }
 
 .align-end {
