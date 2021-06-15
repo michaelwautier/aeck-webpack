@@ -22,12 +22,7 @@
   transform: translateX(-32%);
 }
 
-@media screen and (min-width: 1300px) {
-  .collection-cover.active {
-    width: 39%;
-    transform: translateX(-79%);
-  }
-}
+
 .photoandtext{
   display: flex;
   justify-content: end;
@@ -60,4 +55,46 @@
 
 .move-to-left {
   transform: translateX(-33%);
+}
+
+@media screen and (min-width: 1300px) {
+  .collection-cover.active {
+    width: 39%;
+    transform: translateX(-79%);
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .work-cover {
+    height: 430px;
+    max-width: 270px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  .collection-cover {
+    height: 290px;
+    width: 168px;
+    object-fit: cover;
+    transition: all .6s ease;
+  }
+  .collection-cover:hover {
+    cursor: pointer;
+    width: 210px;
+  }
+  .collection-cover.active {
+    width: 352px;
+    transform: translateX(0%);
+  }
+  .photoandtext{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    position :relative;
+    .collection-text{
+      position : absolute;
+      top: 120px;
+      right: 30px;
+    }
+  }
 }

@@ -1,5 +1,5 @@
 const contactPageContent = `
-  <div class="flex-item-75">
+  <div class="allflex">
     <div class="bio-box">
       <div class="picture-bio">
         <img src="./img/bio.jpeg" alt="julien" id="portrait" />
