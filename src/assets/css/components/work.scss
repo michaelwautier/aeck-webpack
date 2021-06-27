@@ -7,7 +7,7 @@
 
 .collection-cover {
   height: 480px;
-  width: 300px;
+  width: 712px;
   object-fit: cover;
   transition: all .6s ease;
 }
@@ -19,23 +19,36 @@
 
 .collection-cover.active {
   width: 712px;
-  transform: translateX(-32%);
+  // transform: translateX(-32%);
 }
 
+.grid {
+  width: 100%;
+  display: flex;
+}
+.empty{
+  width: 75%;
+  height: 100%;
+  background-color: red;
+  transition: all 0.6s ease;
+}
 
 .photoandtext{
   display: flex;
-  justify-content: end;
-  width: 100%;
+  justify-content: right;
+  width: 25%;
   position :relative;
+  transition: all 0.2s ease;
   .collection-text{
     position : absolute;
     top: 70px;
     right: 170px;
   }
 }
+
+
 .collection-text {
-  // flex-grow: 1;
+  flex-grow: 1;
   transition: all .6s ease;
   background-color: black;
   padding: 10px;
@@ -54,13 +67,11 @@
 }
 
 .move-to-left {
-  transform: translateX(-33%);
 }
 
 @media screen and (min-width: 1300px) {
   .collection-cover.active {
     width: 39%;
-    transform: translateX(-79%);
   }
 }
 
@@ -84,7 +95,7 @@
   }
   .collection-cover.active {
     width: 352px;
-    transform: translateX(0%);
+    // transform: translateX(0%);
   }
   .photoandtext{
     display: flex;

@@ -134,18 +134,27 @@ allBullets.forEach(el => {
 const centerCollectionCover = (collection) => {
   const collectionText = document.querySelector('.collection-text')
   const collectionCover = document.querySelector('.collection-cover')
+  const collectionDiv = document.querySelector('.photoandtext')
+  // const emptyDiv = document.querySelector('.empty')
   let counter = 1
   collectionCover.addEventListener('click', (e) => {
     if (collectionCover.classList.contains("active")) {
+    console.log(counter)
       if (counter === collection.images.length || collection.images.length === 1) {
         collectionText.classList.remove("fade")
         collectionText.classList.remove("move-to-left")     
-        collectionCover.classList.remove("active")
+        // collectionCover.classList.remove("active")
+        collectionCover.classList.add("fade")
         setTimeout(() => {
           collectionCover.src = `img/${collection.images[0]}`
         }, 600)
+        setTimeout(() => {
+          collectionCover.classList.remove("fade")
+        }, 800)
         counter = 1
       } else {
+        collectionText.classList.add("fade")
+        collectionText.classList.add("move-to-left")   
         collectionCover.classList.add("fade")
         setTimeout(() => {
           collectionCover.src = `img/${collection.images[counter - 1]}`
@@ -159,6 +168,8 @@ const centerCollectionCover = (collection) => {
       collectionText.classList.add("fade")
       collectionText.classList.add("move-to-left")     
       collectionCover.classList.add("active")
+      collectionDiv.style.justifyContent = 'center'
+      collectionDiv.style.width = '100%'
     }
   })
 }
