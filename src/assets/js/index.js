@@ -82,8 +82,12 @@ collectionLinks.forEach(el => {
   el.addEventListener('click', () => {
     el.scrollIntoView({behavior: "smooth", block: "nearest", inline: "center"})
     pageContent.classList.add('fade')
-    collectionsList.querySelector('.active')?.classList.remove('active')
-    bulletsDiv.querySelector('.active')?.classList.remove('active')
+    if (collectionsList.querySelector('.active')) {
+      collectionsList.querySelector('.active').classList.remove('active')
+    }
+    if (bulletsDiv.querySelector('.active')) {
+      bulletsDiv.querySelector('.active').classList.remove('active')
+    }
     el.classList.add('active')
     const collectionId = el.firstChild.dataset.collection
     const selectedCollection = collections[collectionId - 1]
@@ -108,8 +112,12 @@ const allBullets = [...document.querySelectorAll('.bullet')]
 allBullets.forEach(el => {
   el.addEventListener('click', () => {
     pageContent.classList.add('fade')
-    collectionsList.querySelector('.active')?.classList.remove('active')
-    bulletsDiv.querySelector('.active')?.classList.remove('active')
+    if (collectionsList.querySelector('.active')) {
+      collectionsList.querySelector('.active').classList.remove('active')
+    }
+    if (bulletsDiv.querySelector('.active')) {
+      bulletsDiv.querySelector('.active').classList.remove('active')
+    }
     el.classList.add('active')
     console.log(el.dataset)
     const selectedCollection = collections[el.dataset.collectionId - 1]
