@@ -90,8 +90,11 @@ collectionLinks.forEach(el => {
     }
     el.classList.add('active')
     const collectionId = el.firstChild.dataset.collection
+    console.log(`collectionId: ${collectionId}`)
     const selectedCollection = collections[collectionId - 1]
+    console.log(`selectedCollection: ${selectedCollection.title}`)
     const bullet = bulletsDiv.childNodes[collectionId]
+    console.log(bullet)
     bullet.classList.add('active')
     const images = selectedCollection.images.map(image => {
       return `img/${image}`
@@ -119,7 +122,6 @@ allBullets.forEach(el => {
       bulletsDiv.querySelector('.active').classList.remove('active')
     }
     el.classList.add('active')
-    console.log(el.dataset)
     const selectedCollection = collections[el.dataset.collectionId - 1]
     const collectionLink = collectionLinks[el.dataset.collectionId - 1]
     collectionLink.classList.add('active')
@@ -147,7 +149,6 @@ const centerCollectionCover = (collection) => {
   let counter = 1
   collectionCover.addEventListener('click', (e) => {
     if (collectionCover.classList.contains("active")) {
-    console.log(counter)
       if (counter === collection.images.length || collection.images.length === 1) {
         collectionText.classList.remove("fade")
         collectionText.classList.remove("move-to-left")     
