@@ -63,7 +63,6 @@ contactButtons.forEach(button => {
 const collectionsList = document.getElementById("collections-list")
 
 let index = 1 
-
 collections.forEach(collection => {
   const listItem = document.createElement('li')
   listItem.classList.add("list-item")
@@ -71,6 +70,7 @@ collections.forEach(collection => {
   collectionsList.appendChild(listItem)
   const bullet = document.createElement("div")
   bullet.classList.add("bullet")
+  bullet.setAttribute('id', `bullet-${index}`)
   bullet.dataset.collectionId = index
   index++
   bulletsDiv.appendChild(bullet)
@@ -82,19 +82,12 @@ collectionLinks.forEach(el => {
   el.addEventListener('click', () => {
     el.scrollIntoView({behavior: "smooth", block: "nearest", inline: "center"})
     pageContent.classList.add('fade')
-    if (collectionsList.querySelector('.active')) {
-      collectionsList.querySelector('.active').classList.remove('active')
-    }
-    if (bulletsDiv.querySelector('.active')) {
-      bulletsDiv.querySelector('.active').classList.remove('active')
-    }
+    collectionsList.querySelector('.active')?.classList.remove('active')
+    bulletsDiv.querySelector('.active')?.classList.remove('active')
     el.classList.add('active')
     const collectionId = el.firstChild.dataset.collection
-    console.log(`collectionId: ${collectionId}`)
     const selectedCollection = collections[collectionId - 1]
-    console.log(`selectedCollection: ${selectedCollection.title}`)
-    const bullet = bulletsDiv.childNodes[collectionId]
-    console.log(bullet)
+    const bullet = document.getElementById(`bullet-${collectionId}`)
     bullet.classList.add('active')
     const images = selectedCollection.images.map(image => {
       return `img/${image}`
@@ -115,19 +108,13 @@ const allBullets = [...document.querySelectorAll('.bullet')]
 allBullets.forEach(el => {
   el.addEventListener('click', () => {
     pageContent.classList.add('fade')
-    if (collectionsList.querySelector('.active')) {
-      collectionsList.querySelector('.active').classList.remove('active')
-    }
-    if (bulletsDiv.querySelector('.active')) {
-      bulletsDiv.querySelector('.active').classList.remove('active')
-    }
+    collectionsList.querySelector('.active')?.classList.remove('active')
+    bulletsDiv.querySelector('.active')?.classList.remove('active')
     el.classList.add('active')
     const selectedCollection = collections[el.dataset.collectionId - 1]
     const collectionLink = collectionLinks[el.dataset.collectionId - 1]
     collectionLink.classList.add('active')
     collectionLink.scrollIntoView({behavior: "smooth", block: "nearest", inline: "center"})
-    const bullet = bulletsDiv.childNodes[el.dataset.collectionId]
-    bullet.classList.add('active')
     const images = selectedCollection.images.map(image => {
       return `img/${image}`
     })
